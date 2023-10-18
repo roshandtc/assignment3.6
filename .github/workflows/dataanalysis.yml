@@ -17,13 +17,16 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.x
+        python-version: 3.8
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pandas openpyxl
         pip install seaborn
+        pip install matplotlib
+        pip install seaborn
+        pip install -U scikit-learn
         pip install sklearn
 
     - name: Run Data Analysis
