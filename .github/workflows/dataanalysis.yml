@@ -25,7 +25,7 @@ jobs:
         pip install pandas openpyxl
 
     - name: Run Data Analysis
-      run: python main.py 
+      run: python analysis.py 
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
