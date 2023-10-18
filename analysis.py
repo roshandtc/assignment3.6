@@ -34,13 +34,12 @@ y_pred = model.predict(X_test)
 rmse = mean_squared_error(y_test, y_pred, squared=False)
 
 print(f'RMSE for test_size {test_size}: {rmse}')
-
-    # Plot the data
-    plt.figure(figsize=(8,6))
-    plt.scatter(X_test, y_test, label='Actual')
-    plt.scatter(X_test, y_pred, label='Predicted')
-    plt.title(f'Actual vs Predicted (test_size {test_size})')
-    plt.xlabel('RDSpend')
-    plt.ylabel('Profit')
-    plt.legend()
-    plt.show()
+# Plot the data
+plt.figure(figsize=(8,6))
+plt.scatter(X_test, y_test, label='Actual')
+plt.scatter(X_test, y_pred, label='Predicted')
+plt.title(f'Actual vs Predicted (test_size {test_size})')
+plt.xlabel('RDSpend')
+plt.ylabel('Profit')
+plt.legend()
+plt.show()
