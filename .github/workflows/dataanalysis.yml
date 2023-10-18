@@ -20,7 +20,7 @@ jobs:
 
     - name: Run analysis
       run: |
-        python analysis.py
+        analysis.py
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
